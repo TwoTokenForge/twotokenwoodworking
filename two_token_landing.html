@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Two Token Woodworking</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #111;
+      color: #f0e6d2;
+      line-height: 1.6;
+    }
+
+    header.hero {
+      background: url('assets/forge-banner.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border: 2px solid #888;
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta {
+      background: #c08457;
+      color: #111;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .cta:hover {
+      background: #a06b40;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #c08457;
+      display: inline-block;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .gallery .item {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #1a1a1a;
+      color: #888;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #c08457;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Two Token Woodworking</h1>
+      <p>A Forge of Sawdust and Shadows</p>
+      <a href="#shop" class="cta">Enter the Forge</a>
+    </div>
+  </header>
+
+  <section class="intro">
+    <h2>Forged Offerings</h2>
+    <p>Handcrafted relics of wood and soul — pens, boards, and bespoke artifacts etched with time and meaning.</p>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="item">
+      <img src="assets/pen.png" alt="Pen" />
+      <h3>Taproot</h3>
+      <p>Bog Oak & Gunmetal — Bound by lore.</p>
+    </div>
+    <div class="item">
+      <img src="assets/board.png" alt="Board" />
+      <h3>Heartshard</h3>
+      <p>Walnut & Brass — A testament in grain.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>The Forge</h2>
+    <p>In a workshop wreathed in woodsmoke and ink, every piece is a story. We carve, burn, and bind each relic with care, carrying our mark into the world.</p>
+  </section>
+
+  <footer>
+    <p>Crafted by Two Token Woodworking — A Forge of Sawdust and Shadows</p>
+    <p>Follow us on <a href="https://www.instagram.com/twotokenwoodworking" target="_blank">Instagram</a> | Visit our <a href="https://www.whatnot.com/user/twotokenwoodworking" target="_blank">WhatNot Shop</a></p>
+  </footer>
+</body>
+</html>
