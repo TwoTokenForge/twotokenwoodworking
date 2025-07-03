@@ -157,3 +157,27 @@ footer a:hover {
     padding: 0.5rem 1rem;
   }
 }
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tabs button {
+  background: #1a1a1a;
+  border: 1px solid #444;
+  color: #f0e6d2; /* parchment text */
+  padding: 0.5rem 1rem;
+  font-family: 'Mantinia', serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tabs button:hover,
+.tabs button.active {
+  background: #c08457;
+  color: #111;
+}
