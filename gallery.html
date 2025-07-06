@@ -178,13 +178,12 @@
     }
     updateCart();
   }
-
+ <script>
   function checkoutWithPayPal() {
     let total = cart.reduce((sum, item) => sum + item.price * item.qty, 0).toFixed(2);
-    // Replace 'yourlink' with your actual PayPal.me username
-    window.open(`https://www.paypal.com/paypalme/yourlink/${total}`, '_blank');
+    window.open(`https://www.paypal.me/twotokenwoodworking?locale.x=en_US`, '_blank');
   }
-
+</script>
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.add-to-cart').forEach(btn => {
       btn.addEventListener('click', () => {
