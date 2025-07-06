@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Offerings of The Forge</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <section class="intro">
+    <h2>Offerings of The Forge</h2>
+    <p>Each relic you see here has been shaped by fire, ink, and time. These are the pieces that carry the memory of craft and the weight of story — forged not by hands alone, but by devotion.</p>
+  
+    
+
+
+
+  </section>
+
+  <footer>
+    <p>Crafted by Two Token Woodworking — A Forge of Sawdust and Shadows</p>
+    <p><a href="index.html">Return to the Forge</a> | <a href="https://www.instagram.com/two_token_woodworking" target="_blank">Instagram</a></p>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.tabs button');
+    const items = document.querySelectorAll('.gallery .item');
+
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        const category = button.getAttribute('data-category');
+
+        items.forEach(item => {
+          if (category === 'all' || item.classList.contains('category-' + category)) {
+            item.style.display = '';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+<style>
+  #cart-icon {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: #c08457;
+    color: #111;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    font-weight: bold;
+    box-shadow: 0 0 5px #000;
+  }
+
+  #cart-drawer {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100%;
+    background: #1a1a1a url('assets/forge-background.png') repeat;
+    color: #f0e6d2;
+    padding: 1rem;
+    border-left: 2px solid #77ccff;
+    transition: right 0.3s ease;
+    z-index: 999;
+    background-blend-mode: overlay;
+  }
+
+  #cart-drawer.open {
+    right: 0;
+  }
+
+  #cart-drawer h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #77ccff;
+    padding-bottom: 0.5rem;
+    background: linear-gradient(to right, #111, #222);
+    text-shadow: 0 0 5px #77ccff;
+  }
+
+  #cart-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .checkout-button {
+    background: #77ccff;
+    color: #111;
+    border: none;
+    padding: 0.75rem;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 8px #77ccff;
+  }
+
+  .checkout-button:hover {
+    background: #55aacc;
+  }
+</style>
+
+
+
+
+
+
+<style>
+  #cart-icon {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: #c08457;
+    color: #111;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    font-weight: bold;
+    box-shadow: 0 0 5px #000;
+  }
+
+  #cart-drawer {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100%;
+    background: #1a1a1a url('assets/forge-background.png') repeat;
+    color: #f0e6d2;
+    padding: 1rem;
+    border-left: 2px solid #77ccff;
+    transition: right 0.3s ease;
+    z-index: 999;
+    background-blend-mode: overlay;
+  }
+
+  #cart-drawer.open {
+    right: 0;
+  }
+
+  #cart-drawer h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #77ccff;
+    padding-bottom: 0.5rem;
+    background: linear-gradient(to right, #111, #222);
+    text-shadow: 0 0 5px #77ccff;
+  }
+
+  #cart-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .checkout-button {
+    background: #77ccff;
+    color: #111;
+    border: none;
+    padding: 0.75rem;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 8px #77ccff;
+  }
+
+  .checkout-button:hover {
+    background: #55aacc;
+  }
+</style>
+
+
+
+
+<div id="cart-icon" onclick="toggleCart()">
+  🛒 <span id="cart-count">0</span>
+</div>
+
+<div id="cart-drawer">
+  <h3>Your Relics</h3>
+  <ul id="cart-items"></ul>
+  <p>Total: $<span id="cart-total">0.00</span></p>
+  <button onclick="checkoutWithPayPal()" class="checkout-button">Checkout via PayPal</button>
+</div>
+
+<style>
+  #cart-icon {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: #c08457;
+    color: #111;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    font-weight: bold;
+    box-shadow: 0 0 5px #000;
+  }
+
+  #cart-drawer {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100%;
+    background: #1a1a1a url('assets/forge-background.png') repeat;
+    color: #f0e6d2;
+    padding: 1rem;
+    border-left: 2px solid #77ccff;
+    transition: right 0.3s ease;
+    z-index: 999;
+    background-blend-mode: overlay;
+  }
+
+  #cart-drawer.open {
+    right: 0;
+  }
+
+  #cart-drawer h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #77ccff;
+    padding-bottom: 0.5rem;
+    background: linear-gradient(to right, #111, #222);
+    text-shadow: 0 0 5px #77ccff;
+  }
+
+  #cart-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .checkout-button {
+    background: #77ccff;
+    color: #111;
+    border: none;
+    padding: 0.75rem;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 8px #77ccff;
+  }
+
+  .checkout-button:hover {
+    background: #55aacc;
+  }
+</style>
+
+
+
+
+<script>
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  function updateCart() {
+    document.getElementById('cart-count').innerText = cart.reduce((sum, item) => sum + item.qty, 0);
+    const cartList = document.getElementById('cart-items');
+    cartList.innerHTML = '';
+    let total = 0;
+
+    cart.forEach((item, index) => {
+      total += item.price * item.qty;
+      cartList.innerHTML += `<li>
+        ${item.name} × ${item.qty} — $${(item.price * item.qty).toFixed(2)}
+        <button onclick="removeFromCart(${index})" style="margin-left: 8px; background: none; color: #f77; border: none; cursor: pointer;">✖</button>
+      </li>`;
+    });
+
+    document.getElementById('cart-total').innerText = total.toFixed(2);
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+
+  function toggleCart() {
+    document.getElementById('cart-drawer').classList.toggle('open');
+  }
+
+  function addToCart(id, name, price, img) {
+    const item = cart.find(i => i.id === id);
+    if (item) {
+      item.qty++;
+    } else {
+      cart.push({ id, name, price, img, qty: 1 });
+    }
+    updateCart();
+  }
+
+  function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCart();
+  }
+
+  function checkoutWithPayPal() {
+    let total = cart.reduce((sum, item) => sum + item.price * item.qty, 0).toFixed(2);
+    window.open(`https://www.paypal.me/twotokenwoodworking?locale.x=en_US`, '_blank');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.add-to-cart').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.id;
+        const name = btn.dataset.name;
+        const price = parseFloat(btn.dataset.price);
+        const img = btn.dataset.img;
+        addToCart(id, name, price, img);
+      });
+    });
+    updateCart();
+  });
+</script>
+
+</body>
+</html>
