@@ -24,16 +24,17 @@ a:hover {
   text-decoration: underline;
 }
 
-header.hero {
+ header.hero {
   background: url('assets/forge-banner.jpg') no-repeat center center/cover;
-  height: 100vh;
+  min-height: 100svh;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
 }
-
 .overlay {
   background: rgba(0, 0, 0, 0.6);
   padding: 2rem;
