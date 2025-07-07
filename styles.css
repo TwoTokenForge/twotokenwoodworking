@@ -206,3 +206,16 @@ footer a:hover {
     background-position: top center;
   }
 }
+@media (max-width: 768px) {
+  header.hero {
+    background: url('assets/forge-banner.png') no-repeat center top;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 100svh;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
