@@ -154,10 +154,13 @@ footer a:hover {
 .tabs {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
   flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 100%;
 }
+
 
 .tabs button {
   background: #1a1a1a;
