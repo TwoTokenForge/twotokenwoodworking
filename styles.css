@@ -86,9 +86,6 @@ h2 {
 }
 
 .gallery {
-  background: url('assets/gallery-background.png') no-repeat center center fixed;
-  background-size: cover;
-  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
