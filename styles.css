@@ -198,3 +198,11 @@ footer a:hover {
     position: relative;
   }
 }
+@media (max-width: 768px) {
+  .gallery {
+    background-attachment: scroll;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
