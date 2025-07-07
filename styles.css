@@ -67,6 +67,7 @@ header.hero {
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
+  min-height: 100vh;
   margin: auto;
 }
 
