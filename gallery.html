@@ -437,9 +437,10 @@
     updateCart();
   }
 
-  function checkoutWithPayPal() {
-    let total = cart.reduce((sum, item) => sum + item.price * item.qty, 0).toFixed(2);
-    window.open(`https://www.paypal.me/twotokenwoodworking?locale.x=en_US`, '_blank');
+ function checkoutWithPayPal() {
+  let total = cart.reduce((sum, item) => sum + item.price * item.qty, 0).toFixed(2);
+  window.open(`https://www.paypal.me/twotokenwoodworking/${total}`, '_blank');
+}
   }
 
   document.addEventListener('DOMContentLoaded', () => {
