@@ -85,16 +85,15 @@ h2 {
   justify-content: center;
 }
 
-.gallery .item {
-  background: rgba(26, 26, 26, 0.9);
-  border: 1px solid #333;
-  padding: 1rem;
-  border-radius: 8px;
-  width: 300px;
-  text-align: center;
-  position: relative;
+.gallery {
+  background: url('assets/gallery-background.png') no-repeat center center fixed;
+  background-size: cover;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
-
 .gallery img {
   max-width: 100%;
   border-radius: 5px;
