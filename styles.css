@@ -244,3 +244,33 @@ footer a:hover {
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
 }
 }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.gallery .item {
+  flex: 0 0 45%;
+  max-width: 45%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+}
+
+.gallery .item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .gallery .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+}
