@@ -305,3 +305,17 @@ footer a:hover {
   right: 0;
 }
 }
+#cart-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #c1875c;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #000;
+  z-index: 9999;
+  cursor: pointer;
+  font-weight: bold;
+}
