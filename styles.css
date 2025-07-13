@@ -214,4 +214,25 @@ footer a:hover {
     background-size: contain;
     background-position: top center;
   }
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.gallery .item {
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery .item {
+    width: 100%;
+  }
+}
 }
