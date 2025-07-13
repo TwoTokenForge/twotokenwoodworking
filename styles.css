@@ -381,3 +381,21 @@ header.hero > * {
     margin: 1rem auto 0;
   }
 }
+.cart {
+  position: fixed;
+  top: 0;
+  right: -320px; /* how hidden it is when closed */
+  width: 300px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  z-index: 9999;
+}
+
+/* when the cart is open */
+.cart.open {
+  right: 0;
+}
