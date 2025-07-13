@@ -419,3 +419,51 @@ header.hero > * {
   background-color: #55bbdd;
   transform: scale(1.05);
 }
+.testimonials-body {
+  background: url('assets/gallery-background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #f4f1e6;
+  font-family: 'Georgia', serif;
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonials-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 10px #ff7700;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffcc99;
+}
+
+.testimonial blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #77ccff;
+  color: #111;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 0 6px #77ccff;
+}
