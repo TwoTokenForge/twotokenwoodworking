@@ -361,3 +361,23 @@ header.hero > * {
 }.gallery-header img {
   opacity: 0.5 !important;
 }
+@media (max-width: 768px) {
+  .gallery {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .item {
+    width: 90% !important;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .item img {
+    margin: 0 auto;
+  }
+
+  .item button {
+    margin: 1rem auto 0;
+  }
+}
