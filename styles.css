@@ -399,3 +399,7 @@ header.hero > * {
 .cart.open {
   right: 0;
 }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2rem; padding-top: 3rem; }
+  .hero button { margin-top: 1.5rem; }
+}
