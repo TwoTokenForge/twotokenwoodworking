@@ -364,3 +364,11 @@ header.hero > * {
   z-index: 1;
   pointer-events: none;
 }
+.gallery-header img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  display: block;
+}.gallery-header img {
+  opacity: 0.5 !important;
+}
