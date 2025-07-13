@@ -1,0 +1,313 @@
+@font-face {
+  font-family: 'Mantinia';
+  src: url('assets/Mantinia.woff2') format('woff2'),
+       url('assets/Mantinia.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: url('assets/background-texture.jpg') repeat;
+  background-size: contain;
+  color: #f0e6d2;
+  line-height: 1.6;
+}
+
+a {
+  color: #77ccff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header.hero {
+  background: url('assets/forge-banner.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border: 2px solid #888;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-family: 'Mantinia', serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta {
+  background: #c08457;
+  color: #111;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.cta:hover {
+  background: #a06b40;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'Mantinia', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #c08457;
+  display: inline-block;
+}
+
+
+
+.gallery 
+
+.gallery img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.gallery .item h3 {
+  font-family: 'Mantinia', serif;
+}
+
+.item.sold {
+  opacity: 0.7;
+  filter: grayscale(60%);
+}
+
+.sold-banner {
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  transform: rotate(45deg);
+  background: #c08457;
+  color: #111;
+  padding: 0.25rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+  z-index: 10;
+}
+
+footer {
+  background: #1a1a1a;
+  color: #888;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #c08457;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 100%;
+}
+.tabs button {
+  background: #1a1a1a;
+  border: 1px solid #444;
+  color: #f0e6d2; /* parchment text */
+  padding: 0.5rem 1rem;
+  font-family: 'Mantinia', serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tabs button:hover,
+.tabs button.active {
+  background: #c08457;
+  color: #111;
+}
+
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  header.hero {
+    background: url('assets/forge-banner.png') no-repeat center top;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 100svh;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+.gallery {
+  background: url('assets/gallery-background.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.gallery-header img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #111;
+}
+
+.item {
+  width: 45%;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: 90%;
+  }
+  .gallery {
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: top center;
+  }
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.gallery .item {
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery .item {
+    width: 100%;
+  }
+}
+  .gallery .item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+}
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.gallery .item {
+  flex: 0 0 45%;
+  max-width: 45%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+}
+
+.gallery .item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .gallery .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+
+
+
+
+}
+
+#cart-icon {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #c08457;
+  color: #111;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  font-weight: bold;
+  box-shadow: 0 0 5px #000;
+}
+
+#cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100%;
+  background: #1a1a1a url('assets/forge-background.png') repeat;
+  color: #f0e6d2;
+  padding: 1rem;
+  border-left: 2px solid #77ccff;
+  transition: right 0.3s ease;
+  z-index: 999;
+  background-blend-mode: overlay;
+}
+
+#cart-drawer.open {
+  right: 0;
+}
